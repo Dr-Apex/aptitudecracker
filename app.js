@@ -17,7 +17,7 @@ const orderRoutes = require('./routes/order');
 // const paymentBRoutes = require('./routes/payment');
 
 // DB connection
-mongoose.connect(process.env.DATABASE, {
+mongoose.connect("mongodb+srv://allen:12345678allen@cluster0.srb4t.mongodb.net/aptitude?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true
