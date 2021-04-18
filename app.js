@@ -46,3 +46,7 @@ const port = process.env.PORT || 8000;
 app.listen(port, () => {
   console.log(`App is running at ${port}`);
 });
+
+app.get('/', (req, res, next) => {
+  res.status(200).send('Hello World!');
+})
